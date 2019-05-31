@@ -1,0 +1,23 @@
+Westerfield, Joyner, and Moore. (1978). Temperature-sensitive conduction failure
+at axon branch points. J. Neurophysiol. 41: 1-8.
+
+This model reproduces figure 2C & 2D. An action potential, generated in the 
+small (40 um) branch, fails to invade the large axon (250 um) on the first 
+run at 7 degC but does invade when the temperature is reduced to 5 degC for
+the second run. As discussed in the paper, the experimental values for the 
+amplitude and rate of rise of the action potential were quite dependent on the
+physiological condition of the axon. The same is true for the value of the 
+critical temperature as can be seen in the simulation when the initial condition
+(resting potential) is altered. For this simulation the resting potential
+was depolarised from -65 to -64 mV as a consequence of changing the leakage
+reversal potential from  el_hh = -50.183629 to -54.401079 (see the
+init procedure in the mosinit.hoc file).
+
+The original simulations were done with a Fortran program employing an 
+extension of the implicit integration method of Crank and Nicholson written by
+Joyner for a branching axon.
+
+The NEURON implementation of this model was prepared by Michael Hines.
+Questions about details of this implementation should be addressed to him
+at michael.hines@yale.edu.
+

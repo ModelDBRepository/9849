@@ -1,0 +1,17 @@
+load_file("nrngui.hoc")
+load_file("start.ses")
+
+proc init() {
+	finitialize(v_init)
+	fcurrent()
+	el_hh = (ina + ik)/gl_hh + v_init
+	fcurrent()
+}
+
+secondorder=2
+Graph[2].exec_menu("Keep Lines")
+run()
+Graph[2].exec_menu("Keep Lines")
+celsius = 5
+run()
+
